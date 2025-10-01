@@ -1,0 +1,105 @@
+:root{
+  --bg: rgba(18,18,22,.55);
+  --border: rgba(255,255,255,.12);
+  --text: #e8e8f0;
+  --muted: #a9adc1;
+  --accent: #7c5cff;
+  --nav-h: 72px;         /* altura del navbar */
+  --pad-x: 20px;         /* padding horizontal */
+}
+
+/* RESET mínimo (sacamos tu width/height global) */
+*{ box-sizing: border-box; }
+html, body{ margin:0; }
+
+/* Empuja el contenido para que no lo tape el navbar fijo */
+body{ padding-top: var(--nav-h); }
+
+/* CONTENEDOR PRINCIPAL FIJO ARRIBA */
+.navBarContainer{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  z-index: 100;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | nav centrado | carrito */
+  align-items: center;
+  gap: 12px;
+  padding: 0 var(--pad-x);
+  background: var(--bg);
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* NAV centrado dentro de la columna del medio */
+#navBar{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#navBar_nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 3vw, 36px);
+}
+
+#navBar_nav p{
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: .2px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  transition: color .2s ease, transform .2s ease;
+  padding: 8px 4px;
+}
+
+#navBar_nav p::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  transition: width .25s ease, left .25s ease;
+}
+
+#navBar_nav p:hover{
+  color: var(--text);
+  transform: translateY(-1px);
+}
+#navBar_nav p:hover::after{ width: 100%; left: 0; }
+
+/* LOGO (columna izquierda) */
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo_img{
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+}
+
+
+/* LIGHT MODE */
+@media (prefers-color-scheme: light){
+  :root{
+    --bg: rgba(255,255,255,.6);
+    --border: rgba(0,0,0,.06);
+    --muted: #505468;
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px){
+  :root{ --nav-h: 64px; }
+  #navBar_nav{ gap: 16px; padding: 0 4px; overflow-x: auto; scrollbar-width: none; }
+  #navBar_nav::-webkit-scrollbar{ display: none; }
+  .logo_img{ height: 34px; }
+}
