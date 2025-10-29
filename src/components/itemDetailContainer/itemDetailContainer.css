@@ -1,0 +1,126 @@
+:root {
+  --bgDetail: #0f0f12;
+  --card: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #e8e8f0;
+  --accent: #c7a23c;
+  --muted: #a9adc1;
+  --radius: 18px;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --transition: all 0.3s ease;
+}
+
+/* --- Contenedor general --- */
+.itemDetailContainer {
+  background: var(--bgDetail);
+  color: var(--text);
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.infoContainer{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Texto (izquierda en desktop) --- */
+.itemDetailText {
+  flex: 1;
+  text-align: left;
+}
+
+.itemName {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(199, 162, 60, 0.3);
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+
+.productDescription {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+/* --- Imagen (derecha) --- */
+.photosContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.productPhoto {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  background: var(--card);
+}
+
+.productPhoto:hover {
+  transform: scale(1.05);
+  border-color: var(--accent);
+  box-shadow: 0 8px 30px rgba(199, 162, 60, 0.35);
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .itemDetailContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .itemName {
+    font-size: 1.8rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .photosContainer {
+    order: 3; /* Imagen entre precio y descripción */
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .productDescription {
+    order: 4;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+
+  .productPhoto {
+    width: 220px;
+    height: 220px;
+  }
+}

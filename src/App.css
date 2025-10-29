@@ -4,3 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+.titulo{
+  display: block;
+  width: 100%;
+  height: 15%;
+}
+
+.totalApp{
+  display: block;
+  width: 100%;
+}

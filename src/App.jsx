@@ -1,18 +1,35 @@
 import './App.css'
 import NavBar from './components/navBar/navBar'
 import ItemListContainer from './components/itemListContainer/itemListContainer'
-import Contador from './components/contador/contador'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ItemDetailContainer from './components/itemDetailContainer/itemDetailContainer'
+
 
 function App() {
 
   return (
-    <div>
-      <NavBar />
-      <ItemListContainer 
-        greeting={ "Bienvenidos al mejor ecommerce del mundo" }
-      />
-      <h1>E commerce</h1>
-      <Contador />
+    <div className='totalApp'>
+
+      <p>DISCLAIMER: Las imagenes vienen en la próxima entrega.</p>
+      <BrowserRouter>
+        <NavBar/>
+        <div className='titulo'><h1>Fermenta</h1></div>
+        <Routes>
+
+          <Route path='/' element={ <ItemListContainer/> }/>
+
+          <Route path='/category/:category' element={ <ItemListContainer/> }/>
+
+          <Route path='/product/:id' element={ <ItemDetailContainer/> }/>
+
+          <Route path='*' element= { <div>Error 404</div> } />
+
+        </Routes>
+        
+        
+        
+        
+      </BrowserRouter>
     </div>
   )
 }

@@ -1,0 +1,484 @@
+[
+  {
+    "id": 1,
+    "internalId": 1001,
+    "name": "Malta Pilsner",
+    "description": "Malta base clara tipo Pilsner, ideal para lagers limpias y cervezas rubias. EBC 3-4.",
+    "price": 1800.00,
+    "units": "kg",
+    "stock": 120,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/malta_pilsner.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Malta" },
+    "tags": { "tag": "base,maltaclara,lager" }
+  },
+  {
+    "id": 2,
+    "internalId": 1002,
+    "name": "Malta Caramelo 60L",
+    "description": "Malta caramelo 60L para cuerpo, color ámbar y notas a toffee.",
+    "price": 2100.00,
+    "units": "kg",
+    "stock": 45,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/malta_caramelo60.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Malta" },
+    "tags": { "tag": "caramelo,especial,color" }
+  },
+  {
+    "id": 3,
+    "internalId": 1101,
+    "name": "Lúpulo Cascade (Pellet)",
+    "description": "Lúpulo americano cítrico/floral. Alfa ácidos ~5.5%. Ideal APA/IPA.",
+    "price": 9500.00,
+    "units": "kg",
+    "stock": 12,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/lupulo_cascade_pellet.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Lúpulo" },
+    "tags": { "tag": "aroma,citrico,american" }
+  },
+  {
+    "id": 4,
+    "internalId": 1102,
+    "name": "Lúpulo Saaz (Flor)",
+    "description": "Lúpulo noble checo, especiado y herbal. Tradicional en Pilsner.",
+    "price": 11200.00,
+    "units": "kg",
+    "stock": 5,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/lupulo_saaz_flor.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Lúpulo" },
+    "tags": { "tag": "noble,lager,saaz" }
+  },
+  {
+    "id": 5,
+    "internalId": 1201,
+    "name": "Levadura Safale US-05",
+    "description": "Levadura ale seca neutra, perfil limpio americano. Atenuación media-alta.",
+    "price": 2900.00,
+    "units": "unidades",
+    "stock": 80,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/levadura_us05.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Levadura" },
+    "tags": { "tag": "ale,seca,americana" }
+  },
+  {
+    "id": 6,
+    "internalId": 1202,
+    "name": "Levadura W-34/70",
+    "description": "Levadura lager clásica alemana. Fermentación limpia y crujiente.",
+    "price": 3200.00,
+    "units": "unidades",
+    "stock": 34,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/levadura_w3470.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Levadura" },
+    "tags": { "tag": "lager,seca,alemana" }
+  },
+  {
+    "id": 7,
+    "internalId": 1301,
+    "name": "Extracto de Malta Líquido Light",
+    "description": "LME claro sin lúpulo. Aporta cuerpo y azúcares fermentables.",
+    "price": 4100.00,
+    "units": "kg",
+    "stock": 22,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/extracto_light_lme.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Extractos" },
+    "tags": { "tag": "lme,claro,adjunto" }
+  },
+  {
+    "id": 8,
+    "internalId": 1401,
+    "name": "Dextrosa",
+    "description": "Dextrosa grado alimenticio. Excelente para carbonatación y aumentar ABV sin cuerpo extra.",
+    "price": 1150.00,
+    "units": "kg",
+    "stock": 60,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/dextrosa.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Azúcares" },
+    "tags": { "tag": "priming,azucar_simple,carbonatacion" }
+  },
+  {
+    "id": 9,
+    "internalId": 1501,
+    "name": "Irish Moss",
+    "description": "Aclarador para hervido. Ayuda a coagular proteínas y mejorar la turbidez final.",
+    "price": 1800.00,
+    "units": "unidades",
+    "stock": 50,
+    "available": true,
+    "photos": {
+      "direction": "/img/insumos/irish_moss.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Clarificantes" },
+    "tags": { "tag": "clarificante,hervido,proteinas" }
+  },
+  {
+    "id": 10,
+    "internalId": 1502,
+    "name": "Whirlfloc Tablet",
+    "description": "Tabletas clarificantes para kettle. Sustituye Irish Moss con mayor eficiencia.",
+    "price": 2100.00,
+    "units": "unidades",
+    "stock": 0,
+    "available": false,
+    "photos": {
+      "direction": "/img/insumos/whirlfloc.jpg"
+    },
+    "categories": { "category": "Insumos" },
+    "subcategories": { "subcategory": "Clarificantes" },
+    "tags": { "tag": "whirlfloc,claridad,kettle" }
+  },
+
+  {
+    "id": 11,
+    "internalId": 2001,
+    "name": "Manguera Silicona Alimenticia 1/2''",
+    "description": "Manguera alta temperatura para trasvase de mosto. Libre de BPA.",
+    "price": 950.00,
+    "units": "m",
+    "stock": 200,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/manguera_silicona_media.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Mangueras" },
+    "tags": { "tag": "trasvase,mosto,calor" }
+  },
+  {
+    "id": 12,
+    "internalId": 2002,
+    "name": "Manguera Reforzada PVC 3/8''",
+    "description": "Manguera transparente reforzada. Ideal frío/líneas de servicio.",
+    "price": 650.00,
+    "units": "m",
+    "stock": 340,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/manguera_reforzada_38.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Mangueras" },
+    "tags": { "tag": "servicio,co2,linea_cerveza" }
+  },
+  {
+    "id": 13,
+    "internalId": 2101,
+    "name": "Conector Rápido Ball Lock - Líquido",
+    "description": "Conector ball lock para salida de cerveza en corny keg.",
+    "price": 5200.00,
+    "units": "unidades",
+    "stock": 28,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/ball_lock_liquido.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Conectores" },
+    "tags": { "tag": "keg,balllock,liquido" }
+  },
+  {
+    "id": 14,
+    "internalId": 2102,
+    "name": "Camlock Acero Inox Tipo A",
+    "description": "Racord camlock tipo A en acero inoxidable para conexiones rápidas en caliente.",
+    "price": 7800.00,
+    "units": "unidades",
+    "stock": 15,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/camlock_tipoA_inox.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Conectores" },
+    "tags": { "tag": "camlock,inox,rapid" }
+  },
+  {
+    "id": 15,
+    "internalId": 2201,
+    "name": "Densímetro de Precisión",
+    "description": "Densímetro graduado 0.990-1.120 para medición de gravedad original y final.",
+    "price": 4600.00,
+    "units": "unidades",
+    "stock": 42,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/densimetro_precision.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Instrumentos de medición" },
+    "tags": { "tag": "og,fg,densidad" }
+  },
+  {
+    "id": 16,
+    "internalId": 2202,
+    "name": "Termómetro Digital Sonda Inox",
+    "description": "Termómetro digital rápido con sonda de acero inoxidable.",
+    "price": 3800.00,
+    "units": "unidades",
+    "stock": 70,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/termometro_digital_inox.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Instrumentos de medición" },
+    "tags": { "tag": "temperatura,coccion,macerado" }
+  },
+  {
+    "id": 17,
+    "internalId": 2301,
+    "name": "Tapadora de Banco Regulable",
+    "description": "Tapadora de banco para tapas corona 26mm y 29mm. Ideal tiradas chicas.",
+    "price": 23500.00,
+    "units": "unidades",
+    "stock": 9,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/tapadora_banco.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Tapadoras" },
+    "tags": { "tag": "tapado,botella,corona" }
+  },
+  {
+    "id": 18,
+    "internalId": 2401,
+    "name": "Bomba Magnética 12V Mosto",
+    "description": "Bomba magnética para recirculación de mosto caliente. Cabezal en inox.",
+    "price": 48900.00,
+    "units": "unidades",
+    "stock": 6,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/bomba_magnetica_12v.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Bombas" },
+    "tags": { "tag": "recirculacion,mosto,bomba" }
+  },
+  {
+    "id": 19,
+    "internalId": 2501,
+    "name": "Fermentador Plástico 30L con Válvula",
+    "description": "Fermentador de grado alimenticio con canilla, airlock y tapa roscada.",
+    "price": 31500.00,
+    "units": "unidades",
+    "stock": 18,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/fermentador_30l_plastico.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Fermentadores" },
+    "tags": { "tag": "fermentador,casero,30l" }
+  },
+  {
+    "id": 20,
+    "internalId": 2502,
+    "name": "Fermentador Cónico Inox 50L",
+    "description": "Fermentador cónico de acero inoxidable con válvula de cosecha de levadura.",
+    "price": 189000.00,
+    "units": "unidades",
+    "stock": 2,
+    "available": true,
+    "photos": {
+      "direction": "/img/equipos/fermentador_conico_50l_inox.jpg"
+    },
+    "categories": { "category": "Equipos" },
+    "subcategories": { "subcategory": "Fermentadores" },
+    "tags": { "tag": "inox,conico,pro" }
+  },
+
+  {
+    "id": 21,
+    "internalId": 3001,
+    "name": "Detergente Alcalino PBW",
+    "description": "Detergente alcalino en polvo, apto food grade. Ideal para remojo en frío/caliente.",
+    "price": 5200.00,
+    "units": "kg",
+    "stock": 55,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/pbw.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Detergentes" },
+    "tags": { "tag": "pbw,remojo,limpieza_tanque" }
+  },
+  {
+    "id": 22,
+    "internalId": 3002,
+    "name": "Detergente Neutro Alimenticio",
+    "description": "Lavado suave sin atacar plásticos ni juntas. Bajo residuo.",
+    "price": 2600.00,
+    "units": "L",
+    "stock": 40,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/detergente_neutro.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Detergentes" },
+    "tags": { "tag": "neutro,suave,foodgrade" }
+  },
+  {
+    "id": 23,
+    "internalId": 3101,
+    "name": "Star San",
+    "description": "Sanitizante ácido no enjuague. Espuma fina, uso en frío.",
+    "price": 8900.00,
+    "units": "L",
+    "stock": 25,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/starsan.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Sanitizantes" },
+    "tags": { "tag": "sanitizante,no_enjuague,ph_acido" }
+  },
+  {
+    "id": 24,
+    "internalId": 3102,
+    "name": "Iodophor",
+    "description": "Sanitizante yodado para equipos cerveceros. Contacto corto.",
+    "price": 6400.00,
+    "units": "L",
+    "stock": 30,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/iodophor.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Sanitizantes" },
+    "tags": { "tag": "yodo,sanitizante,cerveza" }
+  },
+  {
+    "id": 25,
+    "internalId": 3201,
+    "name": "Esponja Doble Capa Industrial",
+    "description": "Esponja gruesa amarilla/verde para limpieza general de cocción y derrames.",
+    "price": 450.00,
+    "units": "unidades",
+    "stock": 200,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/esponja_industrial.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Esponjas" },
+    "tags": { "tag": "esponja,limpieza_general" }
+  },
+  {
+    "id": 26,
+    "internalId": 3202,
+    "name": "Pad Microfibra Botellas",
+    "description": "Paño/esponja microfibra que no raya vidrio ni PET. Ideal final de lavado.",
+    "price": 700.00,
+    "units": "unidades",
+    "stock": 140,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/pad_microfibra.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Esponjas" },
+    "tags": { "tag": "microfibra,botellas,suave" }
+  },
+  {
+    "id": 27,
+    "internalId": 3301,
+    "name": "Cepillo para Botellas 750ml",
+    "description": "Cepillo largo con cerdas de nylon para limpieza interna de botellas.",
+    "price": 2100.00,
+    "units": "unidades",
+    "stock": 90,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/cepillo_botella.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Cepillos" },
+    "tags": { "tag": "botella,nylon,profundo" }
+  },
+  {
+    "id": 28,
+    "internalId": 3302,
+    "name": "Cepillo Flexible para Mangueras",
+    "description": "Cepillo extra largo y flexible para limpiar interior de líneas y mangueras.",
+    "price": 3200.00,
+    "units": "unidades",
+    "stock": 33,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/cepillo_manguera.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Cepillos" },
+    "tags": { "tag": "manguera,higiene,lineas" }
+  },
+  {
+    "id": 29,
+    "internalId": 3401,
+    "name": "Ácido Peracético 5%",
+    "description": "Desinfectante de contacto rápido. Uso industrial, enjuagar según protocolo.",
+    "price": 7800.00,
+    "units": "L",
+    "stock": 12,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/acido_peracetico.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Sanitizantes" },
+    "tags": { "tag": "peracetico,industrial,desinfeccion" }
+  },
+  {
+    "id": 30,
+    "internalId": 3501,
+    "name": "Detergente CIP Inox",
+    "description": "Detergente alcalino para limpieza CIP de fermentadores y líneas en acero inoxidable.",
+    "price": 11200.00,
+    "units": "kg",
+    "stock": 10,
+    "available": true,
+    "photos": {
+      "direction": "/img/limpieza/detergente_cip_inox.jpg"
+    },
+    "categories": { "category": "Limpieza" },
+    "subcategories": { "subcategory": "Detergentes" },
+    "tags": { "tag": "cip,inox,tanque" }
+  }
+]

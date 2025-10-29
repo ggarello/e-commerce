@@ -46,7 +46,7 @@ body{ padding-top: var(--nav-h); }
   gap: clamp(14px, 3vw, 36px);
 }
 
-#navBar_nav p{
+#navBar_nav .link{
   color: var(--muted);
   font-weight: 600;
   letter-spacing: .2px;
@@ -57,7 +57,7 @@ body{ padding-top: var(--nav-h); }
   padding: 8px 4px;
 }
 
-#navBar_nav p::after{
+#navBar_nav .link::after{
   content: "";
   position: absolute;
   left: 50%;
@@ -67,11 +67,11 @@ body{ padding-top: var(--nav-h); }
   transition: width .25s ease, left .25s ease;
 }
 
-#navBar_nav p:hover{
+#navBar_nav .link:hover{
   color: var(--text);
   transform: translateY(-1px);
 }
-#navBar_nav p:hover::after{ width: 100%; left: 0; }
+#navBar_nav .link:hover::after{ width: 100%; left: 0; }
 
 /* LOGO (columna izquierda) */
 .logo{
