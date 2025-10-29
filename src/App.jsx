@@ -16,7 +16,7 @@ function App() {
         <div className='titulo'><h1>Fermenta</h1></div>
         <Routes>
 
-          <Route path='/' element={ <ItemListContainer/> }/>
+          <Route path='/e-commerce' element={ <ItemListContainer/> }/>
 
           <Route path='/category/:category' element={ <ItemListContainer/> }/>
 
@@ -25,9 +25,6 @@ function App() {
           <Route path='*' element= { <div>Error 404</div> } />
 
         </Routes>
-        
-        
-        
         
       </BrowserRouter>
     </div>
