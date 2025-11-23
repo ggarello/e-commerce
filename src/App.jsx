@@ -10,7 +10,7 @@ import { CartProvider } from './components/shoppingCart/cartContex';
 function App() {
   return (
     <div className='totalApp'>
-      <BrowserRouter basename="/e-commerce">
+      <BrowserRouter basename="">
         <CartProvider>
           <NavBar/>
           <div className='titulo'><h1>Fermenta</h1></div>
