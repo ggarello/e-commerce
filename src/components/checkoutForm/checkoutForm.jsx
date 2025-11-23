@@ -1,13 +1,49 @@
 import './checkoutForm.css'
 
-const CheckoutForm = ( { dataForm, handleChangeInput, SendOrder } )   => {
+const CheckoutForm = ({ dataForm, handleChangeInput, SendOrder }) => {
     return(
-        <form>
-            <input type='text' name='fullname' value={dataForm.fullname} onChange={handleChangeInput}/>
-            <input type='text' name='phone' value={dataForm.phone} onChange={handleChangeInput}/>
-            <input type='text' name='email' value={dataForm.email} onChange={handleChangeInput}/>
+        <form className='checkoutForm'>
 
-            <button className='sendOrder' onClick={SendOrder}>Enviar orden</button>
+            <div className='formGroup'>
+                <label className='formLabel'>Nombre y apellido</label>
+                <input 
+                    type='text' 
+                    name='fullname' 
+                    className='formInput'
+                    value={dataForm.fullname} 
+                    onChange={handleChangeInput}
+                />
+            </div>
+
+            <div className='formGroup'>
+                <label className='formLabel'>Nro de teléfono</label>
+                <input 
+                    type='text' 
+                    name='phone'
+                    className='formInput'
+                    value={dataForm.phone} 
+                    onChange={handleChangeInput}
+                />
+            </div>
+
+            <div className='formGroup'>
+                <label className='formLabel'>Email</label>
+                <input 
+                    type='text' 
+                    name='email'
+                    className='formInput'
+                    value={dataForm.email} 
+                    onChange={handleChangeInput}
+                />
+            </div>
+
+            <button 
+                className='sendOrder'
+                onClick={SendOrder}
+            >
+                Enviar orden
+            </button>
+
         </form>
     )
 }

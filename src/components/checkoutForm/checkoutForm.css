@@ -1,0 +1,82 @@
+:root {
+  --card_COF: rgba(255, 255, 255, 0.06);
+  --border_COF: rgba(255, 255, 255, 0.12);
+  --text_COF: black;
+  --accent_COF: #c7a23c;
+  --muted_COF: #a9adc1;
+  --radius_COF: 14px;
+  --transition_COF: all 0.25s ease;
+  --shadow_COF: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* --- Formulario general --- */
+.checkoutForm {
+  background: var(--card_COF);
+  border: 1px solid var(--border_COF);
+  border-radius: var(--radius_COF);
+  padding: 1.8rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  margin: 1.5rem auto;
+  box-shadow: var(--shadow_COF);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* --- Grupo de campo --- */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* --- Etiquetas --- */
+.formLabel {
+  font-size: 1rem;
+  color: var(--text_COF);
+  opacity: 0.85;
+}
+
+/* --- Inputs --- */
+.formInput {
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius_COF);
+  background: rgb(240, 240, 240);
+  border: 1px solid var(--border_COF);
+  color: var(--text_COF);
+  font-size: 1rem;
+  transition: var(--transition_COF);
+}
+
+.formInput:focus {
+  border-color: var(--accent_COF);
+  background: rgba(255,255,255,0.09);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(199, 162, 60, 0.25);
+}
+
+/* --- Botón enviar --- */
+.sendOrder {
+  background: var(--accent_COF);
+  color: #1b1b1f;
+  border: none;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius_COF);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition_COF);
+  margin-top: 0.6rem;
+}
+
+.sendOrder:hover {
+  background: #e4c56a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(199,162,60,0.4);
+}
+
+.sendOrder:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
