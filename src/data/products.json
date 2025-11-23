@@ -9,7 +9,7 @@
     "stock": 120,
     "available": true,
     "photos": {
-      "direction": "/img/insumos/malta_pilsner.jpg"
+      "direction": "/e-commerce/dataImages/malta.png"
     },
     "categories": { "category": "Insumos" },
     "subcategories": { "subcategory": "Malta" },
@@ -25,7 +25,7 @@
     "stock": 45,
     "available": true,
     "photos": {
-      "direction": "/img/insumos/malta_caramelo60.jpg"
+      "direction": "/e-commerce/dataImages/malta.png"
     },
     "categories": { "category": "Insumos" },
     "subcategories": { "subcategory": "Malta" },
@@ -41,7 +41,7 @@
     "stock": 12,
     "available": true,
     "photos": {
-      "direction": "/img/insumos/lupulo_cascade_pellet.jpg"
+      "direction": "/e-commerce/dataImages/lupulo_pellet.png"
     },
     "categories": { "category": "Insumos" },
     "subcategories": { "subcategory": "Lúpulo" },
@@ -57,7 +57,7 @@
     "stock": 5,
     "available": true,
     "photos": {
-      "direction": "/img/insumos/lupulo_saaz_flor.jpg"
+      "direction": "/e-commerce/dataImages/lupulo_flor.png"
     },
     "categories": { "category": "Insumos" },
     "subcategories": { "subcategory": "Lúpulo" },
@@ -73,7 +73,7 @@
     "stock": 80,
     "available": true,
     "photos": {
-      "direction": "/img/insumos/levadura_us05.jpg"
+      "direction": "/e-commerce/dataImages/levadura.png"
     },
     "categories": { "category": "Insumos" },
     "subcategories": { "subcategory": "Levadura" },
@@ -89,7 +89,7 @@
     "stock": 34,
     "available": true,
     "photos": {
-      "direction": "/img/insumos/levadura_w3470.jpg"
+      "direction": "/e-commerce/dataImages/levadura.png"
     },
     "categories": { "category": "Insumos" },
     "subcategories": { "subcategory": "Levadura" },

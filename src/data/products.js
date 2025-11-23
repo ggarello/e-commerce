@@ -8,4 +8,9 @@ const getProducts = () => {
     })
 }
 
+export const getProductById = (idProduct) => {
+    return products.find(p => p.id === idProduct);
+};
+
+
 export default getProducts;

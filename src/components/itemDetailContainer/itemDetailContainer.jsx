@@ -1,31 +1,48 @@
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import getProducts from '../../data/products'
 import './itemDetailContainer.css'
+import { useState, useEffect, useContext } from 'react'
+import { useParams } from 'react-router-dom'
+import { CartContext } from '../shoppingCart/cartContex'
+import { doc, getDoc} from 'firebase/firestore';
+import db from '../../data/db.js'
 
 const ItemDetailContainer = () => {
 
   const { id } = useParams()
   const [product, setProduct] = useState(null)
+  const [ cantProducto, setCantProducto ] = useState(1)
+  const { cart, addProduct } = useContext(CartContext);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    getProducts()
-      .then((data) => {
-        // Buscamos el producto por ID (asegurate que coincidan tipos)
-        const found = data.find((p) => p.id === Number(id))
-        setProduct(found)
-      })
-      .catch((error) => {
-        console.error('Error: ', error)
-      })
-      .finally(() => {
-        console.log('importación finalizada.')
-      })
-  }, [id])
+  const getProduct = async() => {
+        try{
+            console.log(id)
+            let dataDb;
+            const productRef = doc(db, "products", id)
+            dataDb = await getDoc(productRef)
+            const data = {id: dataDb.id, ...dataDb.data()}
+            setProduct(data)
+        } catch (error) {
+            console.error(error)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+  useEffect( () => { getProduct() }, [ id ] )
 
   // Mientras carga, podés mostrar un loading
   if (!product) {
     return <div className="loading">Cargando...</div>
+  }
+
+  const aumentarCant = () => {
+    setCantProducto( cantProducto + 1 );
+  }
+
+  const reducirCant = () => {
+    if (cantProducto > 1){
+      setCantProducto( cantProducto - 1 ) ;
+    }
   }
 
   return (
@@ -62,7 +79,12 @@ const ItemDetailContainer = () => {
             </div>
         </div>
         <div className='buttonContainer'>
-            <button>Agregar al carrito</button>
+            <div className='cantidad_a_agregar'>
+              <button className='button_decrease_cant' onClick={reducirCant}>-</button>
+              <p className='cant_input'> {cantProducto} </p>
+              <button className='button_increase_cant'  onClick={aumentarCant}>+</button>
+            </div>
+            <button className='button_add_to_cart' onClick={ () => addProduct(product.id, cantProducto)}>Agregar al carrito</button>
         </div>
     </div>
   )

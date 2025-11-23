@@ -22,7 +22,13 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;   /* 👉 centra imagen y textos */
 }
+
+
 
 .product_container:hover {
   transform: translateY(-6px);
@@ -61,3 +67,31 @@
 .product_container:hover .product_category {
   color: var(--accent);
 }
+
+/* Contenedor cuadrado perfecto */
+.productPhotoContainer {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;          /* SIEMPRE cuadrado */
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;           /* centra la imagen */
+  margin-bottom: 0.8rem;
+  overflow: hidden;              /* asegura que nada sobresalga */
+}
+
+/* La imagen se adapta sin deformarse */
+.productPhoto {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;           /* mantiene proporciones */
+  transition: var(--transition);
+}
+
+.product_container:hover .productPhotoContainer {
+  border-color: var(--accent);
+}
+

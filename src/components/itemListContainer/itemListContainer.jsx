@@ -1,44 +1,42 @@
 import './itemListContainer.css'
-import getProducts from '../../data/products'
 import { useState, useEffect} from 'react'
 import ItemList from './itemList'
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import db from '../../data/db.js'
 
 const itemListContainer = () => {
 
     const { category } = useParams();
-
     const [products, setProducts] = useState([]);
-
     const [loading, setLoading] = useState(true);
 
-    
+    const productRef = collection(db, "products")
 
-    useEffect(() => {
-
-        setLoading(true)
-
-        
-        getProducts()
-            .then((data) => {
-                if (category) {
-                    setProducts(data.filter((product)=> product.categories.category.toLowerCase() === category))
-                } else {
-                    setProducts(data)
-                }
-                
+    const getProducts = async() => {
+        try{
+            let dataDb;
+            if (category) {
+                console.log(category.toUpperCase().charAt(0) + category.slice(1))
+                const q = query(productRef, where("categories.category", "==", category.toUpperCase().charAt(0) + category.slice(1)))
+                dataDb = await getDocs(q)
+            } else {
+                dataDb = await getDocs(productRef)
             }
+            
+            const data = dataDb.docs.map( (productDb) =>{
+                return {id: productDb.id, ...productDb.data()}
+            }   
             )
-            .catch( (error) => {
-                console.error('Error: ', error)
-            }
-            )
-            .finally( () => {
-                setLoading(false)
-            } 
-            )
+            setProducts(data)
+        } catch (error) {
+            console.error(error)
+        } finally {
+            setLoading(false)
+        }
+    }
 
-    }, [ category ])
+    useEffect( () => { getProducts() }, [ category ] )
     
     return (
         <div className='products_meta_container'>
