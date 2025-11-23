@@ -234,7 +234,7 @@
     "stock": 42,
     "available": true,
     "photos": {
-      "direction": "/img/equipos/densimetro_precision.jpg"
+      "direction": "/dataImages/densimetro.png"
     },
     "categories": { "category": "Equipos" },
     "subcategories": { "subcategory": "Instrumentos de medición" },
@@ -250,7 +250,7 @@
     "stock": 70,
     "available": true,
     "photos": {
-      "direction": "/img/equipos/termometro_digital_inox.jpg"
+      "direction": "/dataImages/termometro.png"
     },
     "categories": { "category": "Equipos" },
     "subcategories": { "subcategory": "Instrumentos de medición" },
@@ -266,7 +266,7 @@
     "stock": 9,
     "available": true,
     "photos": {
-      "direction": "/img/equipos/tapadora_banco.jpg"
+      "direction": "/dataImages/tapadora.png"
     },
     "categories": { "category": "Equipos" },
     "subcategories": { "subcategory": "Tapadoras" },
@@ -282,7 +282,7 @@
     "stock": 6,
     "available": true,
     "photos": {
-      "direction": "/img/equipos/bomba_magnetica_12v.jpg"
+      "direction": "/dataImages/bomba.png"
     },
     "categories": { "category": "Equipos" },
     "subcategories": { "subcategory": "Bombas" },
@@ -298,7 +298,7 @@
     "stock": 18,
     "available": true,
     "photos": {
-      "direction": "/img/equipos/fermentador_30l_plastico.jpg"
+      "direction": "/dataImages/fermentador.png"
     },
     "categories": { "category": "Equipos" },
     "subcategories": { "subcategory": "Fermentadores" },
@@ -314,7 +314,7 @@
     "stock": 2,
     "available": true,
     "photos": {
-      "direction": "/img/equipos/fermentador_conico_50l_inox.jpg"
+      "direction": "/dataImages/fermentador.png"
     },
     "categories": { "category": "Equipos" },
     "subcategories": { "subcategory": "Fermentadores" },
@@ -331,7 +331,7 @@
     "stock": 55,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/pbw.jpg"
+      "direction": "/dataImages/detergente.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Detergentes" },
@@ -347,7 +347,7 @@
     "stock": 40,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/detergente_neutro.jpg"
+      "direction": "/dataImages/detergente.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Detergentes" },
@@ -363,7 +363,7 @@
     "stock": 25,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/starsan.jpg"
+      "direction": "/dataImages/detergente.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Sanitizantes" },
@@ -379,7 +379,7 @@
     "stock": 30,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/iodophor.jpg"
+      "direction": "/dataImages/iodophor.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Sanitizantes" },
@@ -395,7 +395,7 @@
     "stock": 200,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/esponja_industrial.jpg"
+      "direction": "/dataImages/esponja.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Esponjas" },
@@ -411,7 +411,7 @@
     "stock": 140,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/pad_microfibra.jpg"
+      "direction": "/dataImages/microfibra.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Esponjas" },
@@ -427,7 +427,7 @@
     "stock": 90,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/cepillo_botella.jpg"
+      "direction": "/dataImages/cepillo.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Cepillos" },
@@ -443,7 +443,7 @@
     "stock": 33,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/cepillo_manguera.jpg"
+      "direction": "/dataImages/cepillo.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Cepillos" },
@@ -459,7 +459,7 @@
     "stock": 12,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/acido_peracetico.jpg"
+      "direction": "/dataImages/acido.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Sanitizantes" },
@@ -475,7 +475,7 @@
     "stock": 10,
     "available": true,
     "photos": {
-      "direction": "/img/limpieza/detergente_cip_inox.jpg"
+      "direction": "/dataImages/detergente.png"
     },
     "categories": { "category": "Limpieza" },
     "subcategories": { "subcategory": "Detergentes" },
